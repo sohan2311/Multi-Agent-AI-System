@@ -139,7 +139,7 @@ Enter your goal (or press Enter for example 1):
 MULTI-AGENT SYSTEM RESULT
 ================================================================================
 ✅ Goal achieved successfully!
-🕒 Completed at: 2024-06-16T15:30:45.123456
+🕒 Completed at: 2025-06-16T15:30:45.123456
 
 📋 Agent Execution Chain:
   1. spacex
@@ -291,6 +291,3 @@ Feel free to extend this system by:
 - Adding more sophisticated goal evaluation
 - Implementing caching for better performance
 
-## 📄 License
-
-This project is provided as-is for educational and demonstration purposes.
