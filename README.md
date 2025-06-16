@@ -148,7 +148,7 @@ MULTI-AGENT SYSTEM RESULT
 
 🔍 Key Information:
   🚀 Next SpaceX Launch: Starship IFT-4
-     📅 Date: 2024-06-20T14:00:00.000Z
+     📅 Date: 2025-06-20T14:00:00.000Z
      🚀 Rocket: Starship
   🌤️  Weather: Clear sky (22°C, wind: 3.2 m/s)
   📈 Market Sentiment: 0.25 (Positive)
