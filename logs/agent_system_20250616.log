@@ -1,0 +1,123 @@
+2025-06-16 11:07:53 | [32mINFO[0m | MultiAgentSystem | run:33 | Starting multi-agent system with goal: Find the next SpaceX launch, check weather at that location, then summarize if it may be delayed
+2025-06-16 11:07:53 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:43 | Processing goal: Find the next SpaceX launch, check weather at that location, then summarize if it may be delayed
+2025-06-16 11:07:53 | [32mINFO[0m | MultiAgentSystem | run:39 | Multi-agent system completed successfully
+2025-06-16 11:12:24 | [32mINFO[0m | MultiAgentSystem | run:33 | Starting multi-agent system with goal: Find the next SpaceX launch, check weather at that location, then summarize if it may be delayed
+2025-06-16 11:12:24 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:43 | Processing goal: Find the next SpaceX launch, check weather at that location, then summarize if it may be delayed
+2025-06-16 11:12:24 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:49 | Planner result: {'agent': 'PlannerAgent', 'status': 'completed', 'message': 'Planning completed'}
+2025-06-16 11:12:24 | [31mERROR[0m | MultiAgentSystem.Orchestrator | process_goal:58 | Planning failed: Unknown planning error
+2025-06-16 11:12:24 | [32mINFO[0m | MultiAgentSystem | run:39 | Multi-agent system completed successfully
+2025-06-16 11:12:50 | [32mINFO[0m | MultiAgentSystem | run:33 | Starting multi-agent system with goal: Find the next SpaceX launch, check weather at that location, then summarize if it may be delayed
+2025-06-16 11:12:50 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:43 | Processing goal: Find the next SpaceX launch, check weather at that location, then summarize if it may be delayed
+2025-06-16 11:12:50 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:49 | Planner result: {'agent': 'PlannerAgent', 'status': 'completed', 'message': 'Planning completed'}
+2025-06-16 11:12:50 | [31mERROR[0m | MultiAgentSystem.Orchestrator | process_goal:58 | Planning failed: Unknown planning error
+2025-06-16 11:12:50 | [32mINFO[0m | MultiAgentSystem | run:39 | Multi-agent system completed successfully
+2025-06-16 11:16:55 | [32mINFO[0m | MultiAgentSystem | run:33 | Starting multi-agent system with goal: Get the latest SpaceX launch info and analyze market impact on space-related assets
+2025-06-16 11:16:55 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:43 | Processing goal: Get the latest SpaceX launch info and analyze market impact on space-related assets
+2025-06-16 11:16:55 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:49 | Planner result: {'agent': 'PlannerAgent', 'status': 'completed', 'message': 'Planning completed'}
+2025-06-16 11:16:55 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:68 | Using default execution plan
+2025-06-16 11:16:55 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:89 | Execution plan created: ['spacex', 'market']
+2025-06-16 11:16:55 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:169 | Executing agent: spacex
+2025-06-16 11:16:55 | [32mINFO[0m | MultiAgentSystem.SpaceXAgent | log_processing_start:103 | SpaceXAgent starting processing
+2025-06-16 11:16:56 | [31mERROR[0m | MultiAgentSystem.SpaceXAgent | _fetch_recent_launches:105 | Error fetching recent launches: Cannot connect to host api.spacexdata.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')]
+2025-06-16 11:16:56 | [31mERROR[0m | MultiAgentSystem.SpaceXAgent | process:63 | Error fetching SpaceX data: Cannot connect to host api.spacexdata.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')]
+2025-06-16 11:16:56 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:195 | Agent spacex completed: False
+2025-06-16 11:16:56 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _execute_plan:200 | Agent spacex failed: Failed to fetch SpaceX data: Cannot connect to host api.spacexdata.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')]
+2025-06-16 11:16:56 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:169 | Executing agent: market
+2025-06-16 11:16:56 | [32mINFO[0m | MultiAgentSystem.MarketAgent | log_processing_start:103 | MarketAgent starting processing
+2025-06-16 11:16:56 | [31mERROR[0m | MultiAgentSystem.MarketAgent | _fetch_crypto_data:145 | Error fetching crypto data: Cannot connect to host api.coingecko.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')]
+2025-06-16 11:16:56 | [32mINFO[0m | MultiAgentSystem.MarketAgent | log_processing_end:109 | MarketAgent completed processing successfully
+2025-06-16 11:16:56 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:195 | Agent market completed: False
+2025-06-16 11:16:56 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _execute_plan:200 | Agent market failed: Unknown error
+2025-06-16 11:16:56 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _check_and_iterate:231 | Goal achieved successfully
+2025-06-16 11:16:56 | [32mINFO[0m | MultiAgentSystem | run:39 | Multi-agent system completed successfully
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem | run:33 | Starting multi-agent system with goal: Get the latest SpaceX launch info and analyze market impact on space-related assets
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:43 | Processing goal: Get the latest SpaceX launch info and analyze market impact on space-related assets
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:49 | Planner result: {'agent': 'PlannerAgent', 'status': 'completed', 'message': 'Planning completed'}
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:68 | Using default execution plan
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:89 | Execution plan created: ['spacex', 'market']
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:169 | Executing agent: spacex
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem.SpaceXAgent | log_processing_start:103 | SpaceXAgent starting processing
+2025-06-16 11:18:01 | [31mERROR[0m | MultiAgentSystem.SpaceXAgent | _fetch_recent_launches:105 | Error fetching recent launches: Cannot connect to host api.spacexdata.com:443 ssl:default [nodename nor servname provided, or not known]
+2025-06-16 11:18:01 | [31mERROR[0m | MultiAgentSystem.SpaceXAgent | process:63 | Error fetching SpaceX data: Cannot connect to host api.spacexdata.com:443 ssl:default [nodename nor servname provided, or not known]
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:195 | Agent spacex completed: False
+2025-06-16 11:18:01 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _execute_plan:200 | Agent spacex failed: Failed to fetch SpaceX data: Cannot connect to host api.spacexdata.com:443 ssl:default [nodename nor servname provided, or not known]
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:169 | Executing agent: market
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem.MarketAgent | log_processing_start:103 | MarketAgent starting processing
+2025-06-16 11:18:01 | [31mERROR[0m | MultiAgentSystem.MarketAgent | _fetch_crypto_data:145 | Error fetching crypto data: Cannot connect to host api.coingecko.com:443 ssl:default [nodename nor servname provided, or not known]
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem.MarketAgent | log_processing_end:109 | MarketAgent completed processing successfully
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:195 | Agent market completed: False
+2025-06-16 11:18:01 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _execute_plan:200 | Agent market failed: Unknown error
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _check_and_iterate:231 | Goal achieved successfully
+2025-06-16 11:18:01 | [32mINFO[0m | MultiAgentSystem | run:39 | Multi-agent system completed successfully
+2025-06-16 11:22:16 | [32mINFO[0m | MultiAgentSystem | run:33 | Starting multi-agent system with goal: Check upcoming SpaceX launches and provide news sentiment analysis
+2025-06-16 11:22:16 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:43 | Processing goal: Check upcoming SpaceX launches and provide news sentiment analysis
+2025-06-16 11:22:16 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:49 | Planner result: {'agent': 'PlannerAgent', 'status': 'completed', 'message': 'Planning completed'}
+2025-06-16 11:22:16 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:69 | Using default execution plan
+2025-06-16 11:22:16 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:86 | Execution plan created: ['spacex', 'news']
+2025-06-16 11:22:16 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:168 | Executing agent: spacex
+2025-06-16 11:22:16 | [32mINFO[0m | MultiAgentSystem.SpaceXAgent | log_processing_start:103 | SpaceXAgent starting processing
+2025-06-16 11:22:16 | [31mERROR[0m | MultiAgentSystem.SpaceXAgent | _fetch_upcoming_launches:89 | Error fetching upcoming launches: Cannot connect to host api.spacexdata.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')]
+2025-06-16 11:22:16 | [31mERROR[0m | MultiAgentSystem.SpaceXAgent | process:63 | Error fetching SpaceX data: Cannot connect to host api.spacexdata.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')]
+2025-06-16 11:22:16 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _execute_plan:201 | Agent spacex failed: Failed to fetch SpaceX data: Cannot connect to host api.spacexdata.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')]
+2025-06-16 11:22:16 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:168 | Executing agent: news
+2025-06-16 11:22:16 | [32mINFO[0m | MultiAgentSystem.NewsAgent | log_processing_start:103 | NewsAgent starting processing
+2025-06-16 11:22:16 | [31mERROR[0m | MultiAgentSystem.NewsAgent | _make_news_request:192 | Error fetching space_news news: Cannot connect to host newsapi.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')]
+2025-06-16 11:22:16 | [32mINFO[0m | MultiAgentSystem.NewsAgent | log_processing_end:109 | NewsAgent completed processing successfully
+2025-06-16 11:22:16 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _execute_plan:201 | Agent news failed: Unknown error
+2025-06-16 11:22:16 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _assess_goal_achievement:257 | Goal assessment - Successful: 0, Failed: 2, Total: 2
+2025-06-16 11:22:16 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _assess_goal_achievement:273 | Goal requires SpaceX data but SpaceX agent failed
+2025-06-16 11:22:16 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _check_and_iterate:238 | Goal not achieved - all agents failed or insufficient data
+2025-06-16 11:22:16 | [32mINFO[0m | MultiAgentSystem | run:39 | Multi-agent system completed successfully
+2025-06-16 11:25:15 | [32mINFO[0m | MultiAgentSystem | run:33 | Starting multi-agent system with goal: Find the next SpaceX launch, check weather at that location, then summarize if it may be delayed
+2025-06-16 11:25:15 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:43 | Processing goal: Find the next SpaceX launch, check weather at that location, then summarize if it may be delayed
+2025-06-16 11:25:15 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:49 | Planner result: {'agent': 'PlannerAgent', 'status': 'completed', 'message': 'Planning completed'}
+2025-06-16 11:25:15 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:69 | Using default execution plan
+2025-06-16 11:25:15 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:86 | Execution plan created: ['spacex', 'weather']
+2025-06-16 11:25:15 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:168 | Executing agent: spacex
+2025-06-16 11:25:15 | [32mINFO[0m | MultiAgentSystem.SpaceXAgent | log_processing_start:103 | SpaceXAgent starting processing
+2025-06-16 11:25:15 | [31mERROR[0m | MultiAgentSystem.SpaceXAgent | _fetch_upcoming_launches:89 | Error fetching upcoming launches: Cannot connect to host api.spacexdata.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')]
+2025-06-16 11:25:15 | [31mERROR[0m | MultiAgentSystem.SpaceXAgent | process:63 | Error fetching SpaceX data: Cannot connect to host api.spacexdata.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')]
+2025-06-16 11:25:15 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _execute_plan:201 | Agent spacex failed: Failed to fetch SpaceX data: Cannot connect to host api.spacexdata.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')]
+2025-06-16 11:25:15 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:168 | Executing agent: weather
+2025-06-16 11:25:15 | [32mINFO[0m | MultiAgentSystem.WeatherAgent | log_processing_start:103 | WeatherAgent starting processing
+2025-06-16 11:25:15 | [32mINFO[0m | MultiAgentSystem.WeatherAgent | log_processing_end:109 | WeatherAgent completed processing successfully
+2025-06-16 11:25:15 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _execute_plan:201 | Agent weather failed: Unknown error
+2025-06-16 11:25:15 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _assess_goal_achievement:257 | Goal assessment - Successful: 0, Failed: 2, Total: 2
+2025-06-16 11:25:15 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _assess_goal_achievement:273 | Goal requires SpaceX data but SpaceX agent failed
+2025-06-16 11:25:15 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _check_and_iterate:238 | Goal not achieved - all agents failed or insufficient data
+2025-06-16 11:25:15 | [32mINFO[0m | MultiAgentSystem | run:39 | Multi-agent system completed successfully
+2025-06-16 11:32:05 | [32mINFO[0m | MultiAgentSystem | run:33 | Starting multi-agent system with goal: Find the next SpaceX launch, check weather at that location, then summarize if it may be delayed
+2025-06-16 11:32:05 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:43 | Processing goal: Find the next SpaceX launch, check weather at that location, then summarize if it may be delayed
+2025-06-16 11:32:05 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:49 | Planner result: {'agent': 'PlannerAgent', 'status': 'completed', 'message': 'Planning completed'}
+2025-06-16 11:32:05 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:69 | Using default execution plan
+2025-06-16 11:32:05 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:86 | Execution plan created: ['spacex', 'weather']
+2025-06-16 11:32:05 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:168 | Executing agent: spacex
+2025-06-16 11:32:05 | [32mINFO[0m | MultiAgentSystem.SpaceXAgent | log_processing_start:103 | SpaceXAgent starting processing
+2025-06-16 11:32:16 | [32mINFO[0m | MultiAgentSystem.SpaceXAgent | log_processing_end:109 | SpaceXAgent completed processing successfully
+2025-06-16 11:32:16 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _execute_plan:201 | Agent spacex failed: Unknown error
+2025-06-16 11:32:16 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:168 | Executing agent: weather
+2025-06-16 11:32:16 | [32mINFO[0m | MultiAgentSystem.WeatherAgent | log_processing_start:103 | WeatherAgent starting processing
+2025-06-16 11:32:16 | [32mINFO[0m | MultiAgentSystem.WeatherAgent | log_processing_end:109 | WeatherAgent completed processing successfully
+2025-06-16 11:32:16 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _execute_plan:201 | Agent weather failed: Unknown error
+2025-06-16 11:32:16 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _assess_goal_achievement:257 | Goal assessment - Successful: 0, Failed: 2, Total: 2
+2025-06-16 11:32:16 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _assess_goal_achievement:273 | Goal requires SpaceX data but SpaceX agent failed
+2025-06-16 11:32:16 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _check_and_iterate:238 | Goal not achieved - all agents failed or insufficient data
+2025-06-16 11:32:16 | [32mINFO[0m | MultiAgentSystem | run:39 | Multi-agent system completed successfully
+2025-06-16 11:38:29 | [32mINFO[0m | MultiAgentSystem | run:33 | Starting multi-agent system with goal: Check upcoming SpaceX launches and provide news sentiment analysis
+2025-06-16 11:38:29 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:43 | Processing goal: Check upcoming SpaceX launches and provide news sentiment analysis
+2025-06-16 11:38:29 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:49 | Planner result: {'agent': 'PlannerAgent', 'status': 'completed', 'message': 'Planning completed'}
+2025-06-16 11:38:29 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:69 | Using default execution plan
+2025-06-16 11:38:29 | [32mINFO[0m | MultiAgentSystem.Orchestrator | process_goal:86 | Execution plan created: ['spacex', 'news']
+2025-06-16 11:38:29 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:168 | Executing agent: spacex
+2025-06-16 11:38:29 | [32mINFO[0m | MultiAgentSystem.SpaceXAgent | log_processing_start:103 | SpaceXAgent starting processing
+2025-06-16 11:39:04 | [32mINFO[0m | MultiAgentSystem.SpaceXAgent | log_processing_end:109 | SpaceXAgent completed processing successfully
+2025-06-16 11:39:04 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _execute_plan:201 | Agent spacex failed: Unknown error
+2025-06-16 11:39:04 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _execute_plan:168 | Executing agent: news
+2025-06-16 11:39:04 | [32mINFO[0m | MultiAgentSystem.NewsAgent | log_processing_start:103 | NewsAgent starting processing
+2025-06-16 11:39:04 | [31mERROR[0m | MultiAgentSystem.NewsAgent | _make_news_request:192 | Error fetching space_news news: Cannot connect to host newsapi.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')]
+2025-06-16 11:39:04 | [32mINFO[0m | MultiAgentSystem.NewsAgent | log_processing_end:109 | NewsAgent completed processing successfully
+2025-06-16 11:39:04 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _execute_plan:201 | Agent news failed: Unknown error
+2025-06-16 11:39:04 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _assess_goal_achievement:257 | Goal assessment - Successful: 0, Failed: 2, Total: 2
+2025-06-16 11:39:04 | [32mINFO[0m | MultiAgentSystem.Orchestrator | _assess_goal_achievement:273 | Goal requires SpaceX data but SpaceX agent failed
+2025-06-16 11:39:04 | [33mWARNING[0m | MultiAgentSystem.Orchestrator | _check_and_iterate:238 | Goal not achieved - all agents failed or insufficient data
+2025-06-16 11:39:04 | [32mINFO[0m | MultiAgentSystem | run:39 | Multi-agent system completed successfully
